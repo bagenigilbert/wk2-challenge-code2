@@ -1,90 +1,117 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&family=Roboto:ital,wght@0,100;0,700;1,300;1,500;1,700&display=swap");
-
+/* Reset default browser styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.logo{
-  color: #5dd11e;
-  font-weight: bold;
-}
 
+/* Basic styles for the body and header */
 body {
-  background-color: burlywood;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 150%;
+  font-family: Arial, sans-serif;
   background-image: url(./images/pexels-pixabay-268533.jpg);
-}
+  color: #04ff08;
 
-a {
-  text-decoration: none;
-}
-
-.header {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 50px;
 
 }
 
-.header__log-and-search {
-  width: 70%;
-  display: flex;
-  align-items: center;
-}
-
-.log span {
-  font-size: 30px;
+header {
+  background-color: transparent;
+  padding: 20px;
+  color: white;
   font-weight: bold;
 }
 
-.header__search {
-  margin-left: 60px;
-  border: none;
-  padding: 10px;
-  padding-left: 15px;
+h1 {
+  font-size: 24px;
+}
+
+/* Layout styles */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: transparent;
+  box-shadow:transparent;
+}
+
+section {
+  margin-bottom: 20px;
+  
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Animal list styles */
+.animal-list ul {
+  list-style-type: none;
+}
+
+.animal-list li {
   cursor: pointer;
-  border-radius: 20rem;
-  font-size: 15px;
-  background-color: rgb(255, 255, 255);
+  margin-bottom: 5px;
 }
 
-.header__search:focus {
-  border: none;
-  
+.animal-list li:hover {
+  text-decoration: underline;
 }
 
-.header__search {
-  width: 450px;
-}
-
-.header__log-in {
+/* Animal details styles */
+.animal-details {
   display: flex;
-  width: 120px;
-  height: 35px;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: #ff0000;
-  color: rgb(241, 234, 234);
-  border-radius: 20px;
-  
+  text-align: center;
 }
 
-.header__log-in a {
+.animal-details img {
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+/* Vote form styles */
+.vote-form input[type="number"] {
+  width: 80px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.vote-form button {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Reset button styles */
+.reset-button button {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add animal form styles */
+.add-animal-form label {
   display: block;
-  color: rgb(255, 255, 255);
+  margin-bottom: 5px;
+}
+
+.add-animal-form input[type="text"],
+.add-animal-form input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.add-animal-form button[type="submit"] {
+  padding: 5px 10px;
+  background-color: #ff0404;
+  color: #ffffff;
+  border: none;
   cursor: pointer;
-  font-size: 15px;
-  font-weight: 600;
-}
-.header__app {
-  color: #44ce29;
-  font-weight: bold;
-}
-.header__profile-menu{
-color: #44ce29;
-font-weight: bold;
 }

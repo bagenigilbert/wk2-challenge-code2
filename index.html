@@ -1,22 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Phase-1 Wk-2 Code Challenge</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="./index.js"></script>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__log-and-search">
-        <div class="logo"><span>Flataculties :</span></div>
-        <input
-          class="header__search"type="search"placeholder="Searching Animals....."/>
-      </div>
-      <div class="header__app">App</div>
-      <div class="header__log-in"><a href="#">Log In</a></div>
-      <div class="header__profile-menu">icon</div>
-    </header>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flatacuties</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Flatacuties - Vote for the Cutest Animal</h1>
+  </header>
+  
+  <main>
+    <section class="animal-list">
+      <h2>Animal Names</h2>
+      <ul id="animal-names"></ul>
+    </section>
+    
+    <section class="animal-details">
+      <h2>Animal Details</h2>
+      <div id="animal-details"></div>
+    </section>
+    
+    <section class="vote-form">
+      <h2>Vote for an Animal</h2>
+      <input type="number" id="vote-input" min="0" value="0">
+      <button id="vote-button">Vote</button>
+    </section>
+    
+    <section class="reset-button">
+      <button id="reset-button">Reset Votes</button>
+    </section>
+    
+    <section class="add-animal-form">
+      <h2>Add a New Animal</h2>
+      <form id="animal-form">
+        <label for="animal-name">Animal Name:</label>
+        <input type="text" id="animal-name">
+        
+        <label for="animal-image">Image URL:</label>
+        <input type="text" id="animal-image">
+        
+        <label for="animal-votes">Votes:</label>
+        <input type="number" id="animal-votes" min="0" value="0">
+        
+        <button type="submit">Add Animal</button>
+      </form>
+    </section>
+  </main>
+  
+  <script src="index.js"></script>
+</body>
 </html>
