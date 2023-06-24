@@ -7,9 +7,9 @@
 }
 
 body {
-  background-color: #ffffff;
-  font-family: Roboto;
-  font-size: 1rem;
+  background-color: #e8ca66;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
 }
 
 a {
@@ -37,14 +37,14 @@ a {
 }
 
 .header__search {
-  margin-left: 50px;
+  margin-left: 60px;
   border: none;
   padding: 10px;
-  padding-left: 20px;
+  padding-left: 15px;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 20rem;
   font-size: 15px;
-  background-color: #f6f7f8;
+  background-color: white;
 }
 
 .header__search:focus {
@@ -52,23 +52,24 @@ a {
 }
 
 .header__search {
-  width: 500px;
+  width: 450px;
 }
 
 .header__log-in {
   display: flex;
   width: 120px;
-  height: 32px;
+  height: 35px;
   align-items: center;
   justify-content: center;
-  background-color: #ff4500;
-  color: white;
+  background-color: #0008ff;
+  color: rgb(241, 234, 234);
   border-radius: 20px;
+  
 }
 
 .header__log-in a {
   display: block;
-  color: white;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   font-size: 15px;
   font-weight: 600;
