@@ -1,89 +1,64 @@
-# wk2-challenge-code2
-## Phase-1 Week-2 Code Challenge
-In this code challenge you are required to create a mini app, Flatacuties, where you can vote for the cutest animal! You will use a local API and build out the frontend for our app.
+# Flataculties
 
-## Learning Goals
-create a mini project app to practice on this that follows:
+Flataculties is a web app where you can vote for the cutest animal! This project aims to practice array iteration, DOM manipulation, handling events, and server communication using a local API.
 
-*DOM
-*Server communications.
-*Events
-*array iteration
+## Table of Contents
+- [Project Description](#project-description)
+- [Project Setup](#project-setup)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Requirements
-For this project, you must:
+## Project Description
 
-*Have a well-written README file.
-*Fetch data from a local server running JSON DB server.
+In Flataculties, users can view a list of animal names and their corresponding images. They can click on an animal's name to see its details, including the image and the number of votes received. Users also have the ability to add votes for each animal, which will be displayed alongside the animal's details.
 
-## Project Setup 
+The project uses a local API server to fetch and update data. The server is set up using the `json-server` package and a `db.json` file that stores the animal data.
 
-## Project Setup & Pre-requisite Data
-In your project directory, create a db.json file and use this data Links to an external site. for your server DB.
-Run this command to get the backend started: json-server --watch db.json
-Test your server by visiting this route in the browser: http://localhost:3000/characters
 ## Project Setup
-Create a new project folder.
-Create a new GitHub repository (NB: ENSURE IT IS PRIVATE).
-Add your TM as a contributor to the project.
-Please make sure you regularly commit to the repository.
-## Project Guidelines
-Your project should conform to the following set of guidelines:
 
-## Core Deliverables
-As a user, You should:
+To set up the project locally, follow these steps:
 
-See a list of all animal names. You will need to make a GET request to the following endpoint to retrieve the character data
-GET /characters
+1. Clone the repository:
 
-Example Response:
+2. Install the project dependencies:
 
-[
-  {
-    "id": 1,
+3. Start the development server:
 
-    "name": "Mr. Cute",
+4. Open your browser and visit `http://localhost:3000` to access the Flataculties web app.
 
-    "image": "https://thumbs.gfycat.com/EquatorialIckyCat-max-1mb.gif",
+## Usage
 
-    "votes": 0
-  },
+- On the home page, you will see a list of animal names. Click on a name to view the details of that animal, including the image and number of votes.
 
-  {
-    "id": 2,
+- To add votes for an animal, click on the "+1 Vote" button on the animal's details page. The updated vote count will be displayed immediately.
 
-    "name": "Mx. Monkey",
+- You can also reset the votes for all animals to zero by clicking the "Reset Votes" button.
 
-    "image": "https://thumbs.gfycat.com/FatalInnocentAmericanshorthair-max-1mb.gif",
+- To add a new animal, fill out the form on the "Add Animal" page and submit the form. The new animal will be added to the list with zero votes.
 
-    "votes": 0
-  }
-]
-Click on an animal’s name to see its details i.e image and number of votes. Note, you should only be displaying the details of one animal at a time. You can either use the character information from your first request or make a new request to this endpoint to get the character's details
-GET /characters/:id
+## API Endpoints
 
-Example Response:
+The project uses the following API endpoints:
 
-{
-  "id": 1,
+- `GET /characters`: Retrieve the list of all animals and their details.
+- `GET /characters/:id`: Retrieve the details of a specific animal by ID.
+- `POST /characters`: Add a new animal to the list.
 
-  "name": "Mr. Cute",
+## Contributing
 
-  "image": "https://thumbs.gfycat.com/EquatorialIckyCat-max-1mb.gif",
+Contributions to the Flataculties project are welcome! If you have any ideas, improvements, or bug fixes, please feel free to submit a pull request.
 
-  "votes": 0
-}
-When viewing an animal’s details, I should be able to add the number of votes for each animal. This number of votes should then be displayed together with the animal’s details. No persistence is needed for the votes.
-## Bonus Deliverables
-These bonus deliverables are provided if you want an extra challenge and won't affect score.
+1. Fork the repository.
+2. Create a new branch for your feature/fix:
+3. Commit your changes and push the branch:
+4. Open a pull request in the repository and provide a detailed description of your changes.
 
-## Make sure to commit your work to save your progress before attempting the bonus deliverables!
+## Author
 
-Add a reset button that resets the votes back to 0
-Have a form for adding animals.
+- Gilbert Bageni
 
-## Authors
-Gilbert Bageni
+## License
 
-## Copyright
-Released under the MIT License.md. See the LICENSE file
+This project is licensed under the [MIT License](LICENSE).
